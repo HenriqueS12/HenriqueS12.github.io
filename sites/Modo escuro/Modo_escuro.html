@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo escuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="corpo">
+        <div class="trocar">
+            <input type="checkbox" name="trocar" id="troca" class="checkbox-de-troca">
+            <label for="troca" class="label-de-troca">
+                <span class="troca-um"></span>
+                <span class="troca-dois"></span>
+            </label>
+        </div>
+    </div>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+<script>
+    $('#troca').change(function(){
+        $('.corpo').toggleClass('modo-escuro');
+    });
+</script>
+
+
+
+</body>
+</html>
